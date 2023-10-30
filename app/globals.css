@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.slide {
+    @apply bg-slate-500 w-80 h-40;
+}
