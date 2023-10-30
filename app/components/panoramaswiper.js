@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Navigation } from 'swiper/modules';
+import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
@@ -24,14 +25,14 @@ export default function PanoramaSwiper() {
     console.log(data);
     sortEvents(data);
 
+    const slideEvents = data.slice(0, 4);
+
     function sortEvents(events) {
-        let eventDates = [];
         events.forEach((event) => {
-            eventDates.push(new Date(event.eventdate));
+            events.eventdate = {Date: new Date(event.eventDate)}
         });
-        const sortedDates = eventDates.sort((a, b) => b.date - a.date);
-        console.log(sortedDates);
-        return sortedDates;
+        events.sort((a, b) => b.date - a.date);
+        //console.log(events);
     }
     
 
@@ -46,10 +47,19 @@ export default function PanoramaSwiper() {
           slidesPerView={3}
           onSlideChange={(swiper) => console.log(swiper)}
         >
-          <SwiperSlide><div className="slide">Slide 1</div></SwiperSlide>
-          <SwiperSlide><div className="slide">Slide 2</div></SwiperSlide>
-          <SwiperSlide><div className="slide">Slide 3</div></SwiperSlide>
-          <SwiperSlide><div className="slide">Slide 4</div></SwiperSlide>
+            {slideEvents.map((event) => (
+                <SwiperSlide>
+                    <div className="slide">
+                        <h2>{event.title}</h2>
+                        <Image
+                          src={'http://localhost:5888/images/event/' + event.image}
+                          fill={true}
+                          alt={event.title}
+                          >
+                          </Image>
+                    </div>
+                </SwiperSlide>
+            ))}
         </Swiper>
     )
 }

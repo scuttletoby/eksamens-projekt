@@ -1,13 +1,15 @@
 "use client"
 
-import Image from 'next/image';
+import Header from './components/header';
+import Hero from './components/hero';
 import PanoramaSwiper from './components/panoramaswiper';
 
 export default function Home() {
   return (
-    <main>
-      <h1>Hello World</h1>
-      <PanoramaSwiper />
-    </main>
+    <>
+      <Header />
+      <Hero />
+      {/* <PanoramaSwiper /> */}
+    </>
   )
 }
