@@ -9,9 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.0.13",
+    "@phosphor-icons/web": "^2.0.3",
+    "font-awesome": "^4.7.0",
     "next": "14.0.0",
     "react": "^18",
     "react-dom": "^18",
+    "react-icons": "^4.11.0",
     "swiper": "^11.0.3"
   },
   "devDependencies": {

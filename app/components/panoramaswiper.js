@@ -46,6 +46,7 @@ export default function PanoramaSwiper() {
           navigation
           slidesPerView={3}
           onSlideChange={(swiper) => console.log(swiper)}
+          className="h-48"
         >
             {slideEvents.map((event) => (
                 <SwiperSlide>

@@ -2,6 +2,10 @@
 
 import Header from './components/header';
 import Hero from './components/hero';
+import Faellesskab from './components/faellesskab';
+import VoresMael from './components/voresmael';
+import Centrum from './components/centrum';
+import Footer from './components/footer';
 import PanoramaSwiper from './components/panoramaswiper';
 
 export default function Home() {
@@ -9,6 +13,10 @@ export default function Home() {
     <>
       <Header />
       <Hero />
+      <Faellesskab />
+      <VoresMael />
+      <Centrum />
+      <Footer />
       {/* <PanoramaSwiper /> */}
     </>
   )

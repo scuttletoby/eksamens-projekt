@@ -6,8 +6,6 @@ export default function Hero() {
     const [isLoading, setLoading] = useState(true);
     const [isHidden, setHidden] = useState(true);
 
-    let video = document.getElementById('video');
-
     useEffect(() => {
         fetch('http://localhost:5888/heros/653f624462bf0da5500f26de')
           .then((res) => res.json())
@@ -19,6 +17,8 @@ export default function Hero() {
 
     if (isLoading) return <p>Loading...</p>
     if (!data) return <p>No event data...</p>
+
+    let video = document.getElementById('video');
 
     // console.log(data);
 

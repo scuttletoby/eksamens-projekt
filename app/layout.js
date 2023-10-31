@@ -1,5 +1,6 @@
-import { Inter } from 'next/font/google'
-import './globals.css'
+import { Inter } from 'next/font/google';
+import './globals.css';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,6 +12,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Script src="https://unpkg.com/@phosphor-icons/web" />
+      <link precedence="default" href="/assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+      <link precedence="default" href="/assets/fontawesome/css/brands.css" rel="stylesheet" />
+      <link precedence="default" href="/assets/fontawesome/css/solid.css" rel="stylesheet" />
       <body className={inter.className}>{children}</body>
     </html>
   )
