@@ -56,13 +56,13 @@ export default function Footer() {
     let randomImages = getRandomImages(eventData, 6);
     
     return (
-        <footer className="w-full h-full py-10 mt-20 bg-background2 bg-footer">
-            <div className="flex px-20">
+        <footer className="w-full h-full py-10 mt-60 bg-background2 bg-footer">
+            <div className="flex px-20 max-lg:flex-col">
                 <div className="flex flex-col w-64 mt-10">
                     <Image
                     alt="Logo in footer"
                     src={"/images/logoFooter.png"}
-                    width="200"
+                    width="125"
                     height="200"
                     />
                     <p className="mt-10 text-xs font-bold text-gray-500 font-Lexend">{data.companypayoff}</p>
@@ -99,7 +99,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="w-64 mt-10">
-                    <h2 className="text-xl font-bold text-white font-Lexend">Kommende Events</h2>
+                    <h2 className="text-xl font-bold text-white font-Lexend">Indhold</h2>
                     <hr className="mt-10 w-[80%] border-gray-800" />
                     <div className="flex flex-col gap-4 mt-10">
                         <div className="flex">
@@ -132,8 +132,9 @@ export default function Footer() {
                     <h2 className="text-xl font-bold text-white font-Lexend">Galleri</h2>
                     <hr className="mt-10 w-[80%] border-gray-800" />
                     <div className="grid grid-cols-3 grid-rows-2 gap-2 mt-10">
-                    {randomImages.map((image) => (
+                    {randomImages.map((image, index) => (
                         <Image
+                        key={"image" + index}
                         className="rounded-md"
                         src={image}
                         alt={"Image in the gallery"}

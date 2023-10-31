@@ -36,27 +36,29 @@ export default function Hero() {
 
     return (
         <>
-        <section className="flex items-center px-20 mt-8">
+        <section className="flex px-20 mt-8 lg:items-center max-lg:flex-col">
             <div className="flex flex-col">
-                <h1 className="h-20 my-12 text-5xl font-bold w-[70%] font-Archivo">{data.title}<br /><span>Alle</span></h1>
-                <p className="my-12 w-[70%]">{data.content}</p>
+                <h1 className="h-20 w-[25rem] my-12 text-5xl font-bold font-Archivo">{data.title}<br /><span>Alle</span></h1>
+                <p className="my-12 w-[25rem]">{data.content}</p>
                 <button className="h-12 mr-auto text-white rounded-md w-36 bg-blush">{data.buttontext}</button>
             </div>
-            <Image
-            className="w-[32rem] h-[24rem] ml-auto rounded-lg relative"
-            src={'http://localhost:5888/images/hero/' + data.image}
-            width={400}
-            height={300}
-            priority
-            alt={"Hero image"}
-            />
-            <a href="#" onClick={videoHandler}>
-                <div className="absolute flex items-center justify-center w-8 h-8 bg-white rounded-full right-28 top-44">
-                    <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                        <path fillRule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clipRule="evenodd" />
-                    </svg>
-                </div>
-            </a>
+            <div className="relative mt-10 lg:ml-auto max-lg:mx-auto">
+                <Image
+                className="w-[30rem] h-[24rem] rounded-lg"
+                src={'http://localhost:5888/images/hero/' + data.image}
+                width={400}
+                height={300}
+                priority
+                alt={"Hero image"}
+                />
+                <a href="#" onClick={videoHandler} className="absolute right-2 top-2">
+                    <div className="flex items-center justify-center w-8 h-8 bg-white rounded-full">
+                        <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path fillRule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clipRule="evenodd" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
         </section>
         <div id="video" className="hidden">
             <div className="fixed top-0 left-0 w-screen h-screen bg-black opacity-80">

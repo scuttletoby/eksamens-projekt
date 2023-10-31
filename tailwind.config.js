@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       'colors': {
+        'bgColor': '#f4f5fa',
         'blush': '#D45D79',
         'footer': '#261C2C',
       },
@@ -18,6 +19,7 @@ module.exports = {
       backgroundImage: {
         'background1': 'url("/images/bg1.jpg")',
         'background2': 'url("/images/contour.png")',
+        'background3': 'url("/images/pattern2.png")',
       }
     },
   },

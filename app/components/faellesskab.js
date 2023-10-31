@@ -21,8 +21,8 @@ export default function Faellesskab() {
     if (!data) return <p>No data...</p>
 
     return (
-        <section className="flex px-20 mt-16 bg-white">
-            <div id="square-container" className="grid items-stretch grid-cols-2 grid-rows-3 gap-4 w-80 h-80">
+        <section className="flex px-20 mt-16 bg-white max-lg:flex-col">
+            <div id="square-container" className="grid items-stretch grid-cols-2 grid-rows-3 gap-4 my-5 w-80 h-80 max-lg:mx-auto">
             <Image
                 className="inline-block col-start-1 row-span-2 row-start-1 rounded-lg"
                 src={'http://localhost:5888/images/community/' + data.image1}
@@ -52,14 +52,14 @@ export default function Faellesskab() {
                 alt={"Square image 4"}
                 />
             </div>
-            <section className="flex flex-col w-[30rem] gap-4 ml-auto">
-                <sub className="text-blush font-Lexend">{data.suptitle}</sub>
+            <section className="flex flex-col w-[30rem] gap-4 lg:ml-auto max-lg:mx-auto">
+                <sub className="my-5 text-blush font-Lexend">{data.suptitle}</sub>
                 <h2 className="text-3xl font-bold font-Lexend">{data.title}</h2>
                 <p className="text-xs">{data.content}</p>
-                <div className="grid grid-cols-2 grid-rows-3 gap-2">
+                <div className="lg:grid lg:grid-cols-2 lg:grid-rows-3 lg:gap-2 max-lg:flex max-lg:flex-col">
                     {data.keypoints.map((keypoint) => (
                         <div className="flex items-center" key={keypoint._id}>
-                        <div id="checkmark" className="">
+                        <div id="checkmark" className="flex">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                             </svg>
