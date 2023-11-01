@@ -19,6 +19,7 @@ export default function Home() {
       <Centrum />
       <HvemErVi />
       <PanoramaSwiper />
+      <div className="h-60"></div>
       <Footer />
     </>
   )

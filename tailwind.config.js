@@ -11,6 +11,7 @@ module.exports = {
         'bgColor': '#f4f5fa',
         'blush': '#D45D79',
         'footer': '#261C2C',
+        'contactColor': '#1d2943',
       },
       'fontFamily': {
         'Archivo': ['sans-serif'],

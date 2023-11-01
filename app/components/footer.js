@@ -56,7 +56,7 @@ export default function Footer() {
     let randomImages = getRandomImages(eventData, 6);
     
     return (
-        <footer className="w-full h-full py-10 mt-60 bg-background2 bg-footer">
+        <footer className="w-full h-full py-10 bg-background2 bg-footer">
             <div className="flex px-20 max-lg:flex-col">
                 <div className="flex flex-col w-64 mt-10">
                     <Image

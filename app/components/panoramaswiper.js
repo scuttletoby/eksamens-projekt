@@ -5,6 +5,7 @@ import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
+import sortEvents from './sortEvents';
 
 export default function PanoramaSwiper() {
     const [data, setData] = useState(null);
@@ -25,15 +26,6 @@ export default function PanoramaSwiper() {
     sortEvents(data);
 
     const slideEvents = data.slice(0, 4);
-
-    function sortEvents(events) {
-        events.forEach((event) => {
-            events.eventdate = {Date: new Date(event.eventDate)}
-        });
-        events.sort((a, b) => b.date - a.date);
-        //console.log(events);
-    }
-    
 
     return (
       <section className="relative px-20 pt-20 h-[25rem] max-lg:h-[30rem] bg-background3 bg-footer">
