@@ -14,10 +14,15 @@ module.exports = {
         'contactColor': '#1d2943',
         'headerSidebar': '#261C2C',
         'dimGray': '#666666',
+        'darkGray': '#555555',
+        'deiftBlue': '#293B5F',
+        'silver': '#AAAAAA',
+        'checkmarkBg': '#fcf2f3',
+        'contactGray': '#f9eaed',
       },
       'fontFamily': {
-        'Archivo': ['sans-serif'],
-        'Lexend': ['sans-serif'],
+        'Archivo': ['Archivo', 'sans-serif'],
+        'Lexend': ['Lexend', 'sans-serif'],
       },
       backgroundImage: {
         'background1': 'url("/images/bg1.jpg")',

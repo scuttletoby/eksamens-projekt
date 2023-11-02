@@ -52,7 +52,7 @@ export default function Header() {
 
     return (
         <>
-            <motion.nav className="flex items-center h-16 px-5 py-4 mx-8 my-4 bg-white rounded-md shadow-lg">
+            <motion.nav className="flex items-center h-16 px-5 py-4 mx-8 bg-white rounded-md shadow-lg">
                 <Image
                 priority
                 animate={(scrollY > 450) ? "block" : "sticky"}
