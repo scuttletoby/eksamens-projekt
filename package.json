@@ -12,6 +12,7 @@
     "@phosphor-icons/react": "^2.0.13",
     "@phosphor-icons/web": "^2.0.3",
     "font-awesome": "^4.7.0",
+    "framer-motion": "^10.16.4",
     "next": "14.0.0",
     "react": "^18",
     "react-dom": "^18",

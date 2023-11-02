@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
       <link precedence="default" href="/assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
       <link precedence="default" href="/assets/fontawesome/css/brands.css" rel="stylesheet" />
       <link precedence="default" href="/assets/fontawesome/css/solid.css" rel="stylesheet" />
+      <link precedence="default" href="/assets/fontawesome/css/regular.css" rel="stylesheet" />
       <body className={inter.className}>{children}</body>
     </html>
   )

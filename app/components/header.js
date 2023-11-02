@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import "../../node_modules/font-awesome/css/font-awesome.min.css";
 import { useState, useEffect } from 'react';
 
 export default function Headers() {

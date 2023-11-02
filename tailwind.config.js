@@ -12,6 +12,8 @@ module.exports = {
         'blush': '#D45D79',
         'footer': '#261C2C',
         'contactColor': '#1d2943',
+        'headerSidebar': '#261C2C',
+        'dimGray': '#666666',
       },
       'fontFamily': {
         'Archivo': ['sans-serif'],

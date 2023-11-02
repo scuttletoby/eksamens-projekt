@@ -7,7 +7,7 @@ export default function Hero() {
     const [isHidden, setHidden] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:5888/heros/653f624462bf0da5500f26de')
+        fetch('http://localhost:5888/heros/6542b939be38a0e5c03e52eb')
           .then((res) => res.json())
           .then((data) => {
             setData(data);
@@ -38,16 +38,16 @@ export default function Hero() {
         <>
         <section className="flex px-20 mt-8 lg:items-center max-lg:flex-col">
             <div className="flex flex-col">
-                <h1 className="h-20 w-[25rem] my-12 text-5xl font-bold font-Archivo">{data.title}<br /><span>Alle</span></h1>
+                <h1 className="h-full w-[25rem] my-12 text-5xl font-bold font-Archivo">{data.title}</h1>
                 <p className="my-12 w-[25rem]">{data.content}</p>
                 <button className="h-12 mr-auto text-white rounded-md w-36 bg-blush">{data.buttontext}</button>
             </div>
-            <div className="relative mt-10 lg:ml-auto max-lg:mx-auto">
+            <div className="relative w-[30rem] h-[24rem] mt-10 lg:ml-auto max-lg:mx-auto">
                 <Image
-                className="w-[30rem] h-[24rem] rounded-lg"
+                className="w-full rounded-lg"
                 src={'http://localhost:5888/images/hero/' + data.image}
-                width={400}
-                height={300}
+                fill
+                objectFit="cover"
                 priority
                 alt={"Hero image"}
                 />

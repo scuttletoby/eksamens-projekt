@@ -27,7 +27,7 @@ export default function EventsPage() {
 
 
     useEffect(() => {
-        fetch('http://localhost:5888/heros/653f624462bf0da5500f26e4', {
+        fetch('http://localhost:5888/heros/6542b939be38a0e5c03e52f1', {
             method: 'GET',
         })
           .then((res) => res.json())
@@ -35,7 +35,7 @@ export default function EventsPage() {
             setHeroData(data);
             setHeroLoading(false)
         })
-        fetch('http://localhost:5888/heros/653f624462bf0da5500f26e2', {
+        fetch('http://localhost:5888/heros/6542b939be38a0e5c03e52ef', {
             method: 'GET',
         })
           .then((res) => res.json())

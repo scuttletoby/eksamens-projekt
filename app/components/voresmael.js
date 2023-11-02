@@ -36,10 +36,12 @@ export default function VoresMael() {
     let sortedHeroData = sortHeroData(heroData);
     let video = document.getElementById('video');
 
+    console.log(heroData);
+
     function sortHeroData(data) {
         let newHeroData;
         data.forEach((hero) => {
-            if (hero._id == "653f624462bf0da5500f26e0") {
+            if (hero._id == "6542b939be38a0e5c03e52ed") {
                 newHeroData = hero;
             }
         });

@@ -16,7 +16,7 @@ export default function Event(probs) {
                 className="w-full rounded-lg"
                 />
             </div>
-            <sub className="font-Lexend text-blush">{date+ " | " + probs.event.category.category}</sub>
+            <sub className="font-Lexend text-blush">{date+ " | " + probs.event.category}</sub>
             <h2 className="font-bold font-Lexend">{probs.event.title}</h2>
         </div>
     )

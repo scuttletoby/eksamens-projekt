@@ -62,7 +62,7 @@ export default function PanoramaSwiper() {
                           >
                           </Image>
                           <div className="absolute h-16 -bottom-16">
-                            <sub className="text-blush font-Lexend">{event.category.category + ":" + event.title}</sub>
+                            <sub className="text-blush font-Lexend">{event.category + ":" + event.title}</sub>
                             <p className="text-base font-bold font-Lexend">Add til api</p>
                           </div>
                     </div>
