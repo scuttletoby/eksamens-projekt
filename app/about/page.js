@@ -6,7 +6,6 @@ import Header from '../components/rework/header';
 import Footer from '../components/footer';
 import Community from '../components/rework/community';
 import { getHero, getGoals } from  '../components/data';
-import { useCountUp } from "use-count-up";
 
 export default function About() {
     let { data: hero, isLoading: isHeroLoading, isError: isHeroError} = getHero("6542b939be38a0e5c03e52ec");
