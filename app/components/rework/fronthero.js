@@ -43,6 +43,7 @@ export default function FrontHero() {
                     fill
                     className="object-cover rounded-lg"
                     alt={"Image of a guy standing with a bike"}
+                    priority
                 />
                 <button className="absolute w-12 h-12 bg-white rounded-full right-2 top-2" onClick={() => setIsVideoOpen(isVideoOpen => !isVideoOpen)}>
                     <i className="fas fa-play text-blush"></i>

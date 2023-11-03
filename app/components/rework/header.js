@@ -6,14 +6,22 @@ import { useState } from 'react';
 
 import { motion, useScroll } from "framer-motion"
 
+import { getEventCategories } from  '../../components/data';
+
 export default function Header() {
     const [isBarOpen, setIsBarOpen] = useState(false);
     const [isDropDownOpen, setIsDropDownOpen] = useState(false);
-    const { scrollY } = useScroll()
+    const { scrollY } = useScroll();
+
+    let { data: eventCategory, isLoading: isEventCategoryLoading, isError: isEventCategoryError} = getEventCategories();
+
+    if (isEventCategoryError) return <div>Error...</div>
+    if (isEventCategoryLoading) return <div>Loading...</div>
+    
 
     const barVariants = {
-        open: {opacity: 1, x: 0, display: 'flex'},
-        closed: {opacity: 0, x: "-50%"},
+        open: {opacity: 1, x: 0, display: "flex"},
+        closed: {opacity: 0, x: "-100%", display: "hidden"},
     }
 
     const barShadowVariants = {
@@ -40,15 +48,6 @@ export default function Header() {
         block: {display: 'sticky'},
         sticky: {display: 'flex'},
     }
-
-    const tempEventName = "Events";
-    const tempEventCategories = [
-        {"_id": "1o2m4gprosmspgmosrg", "category": "Xtreme"},
-        {"_id": "132m41rasdaspgmosrg", "category": "Konkurrence"},
-        {"_id": "142m4gprosmspgmosrg", "category": "Motionister"},
-        {"_id": "112m4gpasd213gmosrg", "category": "Juniorer"},
-        {"_id": "112sgprosmsasd2osrg", "category": "Alle"},
-    ];
 
     return (
         <>
@@ -79,8 +78,12 @@ export default function Header() {
                     className="absolute top-0 left-0 z-10 flex-col hidden w-1/2 h-full p-4 opacity-100 bg-headerSidebar"
                     animate={isBarOpen ? "open" : "closed"}
                     variants={barVariants}
+                    transition={{ duration: 0.25 }}
                 >
-                    <i className="ml-auto text-white fas fa-times" onClick={() => setIsBarOpen(isBarOpen => !isBarOpen)} />
+                    <motion.i className="ml-auto text-white fas fa-times" onClick={() => setIsBarOpen(isBarOpen => !isBarOpen)}
+                        animate={isBarOpen ? "open" : "closed"}
+                        variants={barVariants}
+                    />
                     <Image
                     className="my-20"
                     src={'/images/logo-white.png'}
@@ -98,7 +101,7 @@ export default function Header() {
                             <div href="#" className="flex flex-col justify-center">
                                 <div className="flex">
                                     <li>
-                                        <Link href="#">{tempEventName}</Link>
+                                        <Link href="#">Events</Link>
                                     </li>
                                     <motion.i className="ml-auto fas fa-chevron-down" onClick={() => setIsDropDownOpen(isDropDownOpen => !isDropDownOpen)}
                                        animate={isDropDownOpen ? "open" : "closed"}
@@ -112,7 +115,7 @@ export default function Header() {
                                 animate={isDropDownOpen ? "open" : "closed"}
                                 variants={dropDownVariants}
                                 >
-                                    {tempEventCategories && tempEventCategories.map((event) => (
+                                    {eventCategory && eventCategory.map((event) => (
                                         <li key={event._id}>
                                             <Link href="#">{event.category}</Link>
                                         </li>
