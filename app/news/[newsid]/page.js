@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation'
 import { getNewsArticle } from  '../../components/data';
 import Header from '../../components/rework/header';
 import Footer from '../../components/footer';
+import "../style.css";
 
 export default function NewsArticle() {
     

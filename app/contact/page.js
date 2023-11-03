@@ -6,15 +6,20 @@ import Image from 'next/image';
 import Header from '../components/rework/header';
 import Footer from '../components/footer';
 import { getHero, getContactInfo } from  '../components/data';
+import "./style.css";
 
 
 export default function Contact() {
-    let { data: hero, isLoading: isHeroLoading, isError: isHeroError} = getHero("6542b939be38a0e5c03e52ef");
+    let { data: hero, isLoading: isHeroLoading, isError: isHeroError} = getHero("653f624462bf0da5500f26e2");
     let { data: contact, isLoading: isContactLoading, isError: isContactError} = getContactInfo();
 
     if (isHeroError || isContactError) return <div>Error...</div>
     if (isHeroLoading || isContactLoading) return <div>Loading...</div>
 
+    window.addEventListener("submit", (event) => {
+        event.preventDefault();
+        console.log(event.target[0].value);
+    })
     
 
     const Map = dynamic(
@@ -83,10 +88,10 @@ export default function Contact() {
 
                         <div className="flex flex-col">
                             <label className="text-sm font-Archivo" htmlFor="form-message">Besked</label>
-                            <textarea className="max-w-full p-4 text-sm border rounded-md resize min-h-[4rem] text-darkGray font-Archivo" name="form-message" form="contactForm" placeholder="Din besked..." />
+                            <textarea required className="max-w-full p-4 text-sm border rounded-md resize min-h-[4rem] text-darkGray font-Archivo" name="form-message" form="contactForm" placeholder="Din besked..." />
                         </div>
 
-                        <input className="px-6 py-4 text-white bg-black rounded-md w-fit text-md font-Lexend" type="submit" value="Send besked" />
+                        <input id="form-submit" className="px-6 py-4 text-white bg-black rounded-md w-fit text-md font-Lexend" type="submit" value="Send besked" />
                     </form>   
                 </section>
                 <Map />

@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 import Header from '../components/rework/header';
 import Footer from '../components/footer';
+import "./style.css";
 
 import { getNews } from  '../components/data';
 

@@ -3,21 +3,18 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-
-import { motion, useScroll } from "framer-motion"
+import { motion } from "framer-motion"
 
 import { getEventCategories } from  '../../components/data';
 
 export default function Header() {
     const [isBarOpen, setIsBarOpen] = useState(false);
     const [isDropDownOpen, setIsDropDownOpen] = useState(false);
-    const { scrollY } = useScroll();
 
     let { data: eventCategory, isLoading: isEventCategoryLoading, isError: isEventCategoryError} = getEventCategories();
 
     if (isEventCategoryError) return <div>Error...</div>
     if (isEventCategoryLoading) return <div>Loading...</div>
-    
 
     const barVariants = {
         open: {opacity: 1, x: 0, display: "flex"},
@@ -44,18 +41,11 @@ export default function Header() {
         closed: {opacity: 0, y: 0, height: 0, padding: 0},
     }
 
-    const navVariants = {
-        block: {display: 'sticky'},
-        sticky: {display: 'flex'},
-    }
-
     return (
         <>
-            <motion.nav className="flex items-center h-16 px-5 py-4 mx-8 bg-white rounded-md shadow-lg">
+            <nav className="flex items-center h-16 px-5 py-4 mx-8 bg-white rounded-md shadow-lg">
                 <Image
                 priority
-                animate={(scrollY > 450) ? "block" : "sticky"}
-                variants={navVariants}
                 src={'/images/logo-black.png'}
                 width={128}
                 height={37}
@@ -65,7 +55,7 @@ export default function Header() {
                     animate={isBarOpen ? "open" : "closed"}
                     variants={barIconVariants}
                 />
-            </motion.nav>
+            </nav>
 
             <motion.div
                 id="sidebar-shadow"

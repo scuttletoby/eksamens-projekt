@@ -19,6 +19,7 @@ module.exports = {
         'silver': '#AAAAAA',
         'checkmarkBg': '#fcf2f3',
         'contactGray': '#f9eaed',
+        'footerText': '#a6a6ab',
       },
       'fontFamily': {
         'Archivo': ['Archivo', 'sans-serif'],

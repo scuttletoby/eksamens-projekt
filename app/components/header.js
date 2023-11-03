@@ -56,7 +56,7 @@ export default function Headers() {
             <div className="my-5">
                 <nav className="flex items-center h-16 mx-20 bg-white rounded-md shadow-xl">
                         <Image
-                          src={'/images/logo.png'}
+                          src={'/images/logo-black.png'}
                           width={128}
                           height={37}
                           alt={'Logo'}

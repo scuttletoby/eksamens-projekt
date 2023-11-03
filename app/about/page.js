@@ -6,10 +6,11 @@ import Header from '../components/rework/header';
 import Footer from '../components/footer';
 import Community from '../components/rework/community';
 import { getHero, getGoals } from  '../components/data';
+import "./style.css";
 
 export default function About() {
-    let { data: hero, isLoading: isHeroLoading, isError: isHeroError} = getHero("6542b939be38a0e5c03e52ec");
-    let { data: testimonial, isLoading: isTestimonialLoading, isError: isTestimonialError} = getHero("6542b939be38a0e5c03e52ee");
+    let { data: hero, isLoading: isHeroLoading, isError: isHeroError} = getHero("653f624462bf0da5500f26df");
+    let { data: testimonial, isLoading: isTestimonialLoading, isError: isTestimonialError} = getHero("653f624462bf0da5500f26e1");
     let { data: goals, isLoading: isGoalsLoading, isError: isGoalsError} = getGoals();
 
     if (isHeroError || isTestimonialError || isGoalsError) return <div>Error...</div>
