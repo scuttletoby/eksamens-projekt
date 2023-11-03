@@ -1,0 +1,26 @@
+[
+  {
+    "_id": {
+      "$oid": "653d4c3cc81fe875b0503c76"
+    },
+    "name": "Jens Jensen",
+    "email": "jens@jensen.dk",
+    "phone": "12121212",
+    "message": "Dette er den første besked sendt fra websidens formular. Pøj pøj med eksamen :-)",
+    "read": true,
+    "received": "2023-10-28T18:00:28.420Z",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "653d4c93c81fe875b0503c7c"
+    },
+    "name": "Keld Keldsen",
+    "email": "keld@keldsen.dk",
+    "phone": "13131313",
+    "message": "Her er en besked om, at vi gerne vil være med i klubben.",
+    "read": false,
+    "received": "2023-10-28T18:01:55.581Z",
+    "__v": 0
+  }
+]

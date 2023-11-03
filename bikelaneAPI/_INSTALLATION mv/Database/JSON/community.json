@@ -1,0 +1,41 @@
+[
+  {
+    "_id": {
+      "$oid": "653d02a4ad0fa20a7c780401"
+    },
+    "suptitle": "Fællesskab!",
+    "title": "Det hele handler om at være sammen om noget fælles ... ",
+    "content": "Her er der plads til alle - og sammenholdet er stærkt. Vi passer på hinanden og respekterer hinandens forskelligheder - også når det kommer til ambitioner, mål, valg af cykel. Det vigtigste er at alle føler sig velkommen. ",
+    "keypoints": [
+      {
+        "keypoint": "Alle er velkommen og mødes med gensidig respekt ",
+        "_id": "653d0d03eab926a76e056aab"
+      },
+      {
+        "keypoint": "Du bestemmer selv mål og formål for din deltagelse",
+        "_id": "653d0d15eab926a76e056aaf"
+      },
+      {
+        "keypoint": "Tag familien med",
+        "_id": "653d0d24eab926a76e056ab4"
+      },
+      {
+        "keypoint": "Hyggemotionist eller vild landevejsrytter - du bestemmer",
+        "_id": "653d0d2eeab926a76e056aba"
+      },
+      {
+        "keypoint": "Kontingentet går til arrangementer og hygge i klubben ",
+        "_id": "653d0d3aeab926a76e056ac1"
+      },
+      {
+        "keypoint": "Vi passer på hinanden",
+        "_id": "653d0d42eab926a76e056ac9"
+      }
+    ],
+    "__v": 8,
+    "image1": "box1.jpg",
+    "image2": "box2.jpg",
+    "image3": "box3.jpg",
+    "image4": "box4.jpg"
+  }
+]

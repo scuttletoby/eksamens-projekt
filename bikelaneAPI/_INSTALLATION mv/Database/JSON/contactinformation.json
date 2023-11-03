@@ -1,0 +1,42 @@
+[
+  {
+    "_id": {
+      "$oid": "653d374a785e45e26bb0da2c"
+    },
+    "companypayoff": "Kom og vær med - vi cykler hver dag og der er plads til alle ...",
+    "company": "BikeLane",
+    "address": "Ydesvej 4",
+    "zipcity": "8500 Grenaa",
+    "phone": "(+45) 23 12 34 56",
+    "email": "kontakt@bikelane.dk",
+    "openinghours": "Alle dage kl. 18 til 22",
+    "coordinates": "56.40464943513625, 10.887165776612292",
+    "some": [
+      {
+        "name": "Instagrame",
+        "link": "https://instagram.com/bikelanetest",
+        "icon": "fab fa-instagram",
+        "_id": "653d37b70138d10cabac0303"
+      },
+      {
+        "name": "Pinterest",
+        "link": "https://pinterest.com/bikelanetest",
+        "icon": "fab fa-pinterest",
+        "_id": "653d37de0138d10cabac0307"
+      },
+      {
+        "name": "X",
+        "link": "https://twitter.com/bikelanetest",
+        "icon": "fab fa-twitter",
+        "_id": "653d38690138d10cabac030c"
+      },
+      {
+        "name": "Facebook",
+        "link": "https://facebook.com/bikelanetest",
+        "icon": "fab fa-facebook",
+        "_id": "653d38890138d10cabac0312"
+      }
+    ],
+    "__v": 6
+  }
+]

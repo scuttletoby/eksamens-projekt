@@ -1,0 +1,16 @@
+.env
+node_modules/
+.vscode/
+
+
+# binaries
+bin/
+dist/
+lib/
+
+
+
+# Logs
+logs
+*.log
+npm-debug.log*

@@ -1,0 +1,37 @@
+[
+  {
+    "_id": {
+      "$oid": "653cc684623d0ded81a53b78"
+    },
+    "category": "Xtreme",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "653cc691623d0ded81a53b7a"
+    },
+    "category": "Konkurrence",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "653cc69c623d0ded81a53b7c"
+    },
+    "category": "Motionister",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "653cc6a6623d0ded81a53b7e"
+    },
+    "category": "Juniorer",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "653cc6b1623d0ded81a53b80"
+    },
+    "category": "Alle",
+    "__v": 0
+  }
+]

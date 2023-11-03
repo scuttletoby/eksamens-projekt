@@ -1,0 +1,50 @@
+[
+  {
+    "_id": {
+      "$oid": "653d50b7f3dd3db2ff7d5823"
+    },
+    "sponsor": "Beauty",
+    "logo": "client2.png",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "653d50cbf3dd3db2ff7d5825"
+    },
+    "sponsor": "Organic Product",
+    "logo": "client3.png",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "653d50d7f3dd3db2ff7d5827"
+    },
+    "sponsor": "YOGA",
+    "logo": "client6.png",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "653d5106f3dd3db2ff7d582a"
+    },
+    "sponsor": "ORGANIC",
+    "logo": "client4.png",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "653d511df3dd3db2ff7d582c"
+    },
+    "sponsor": "100%Organic",
+    "logo": "client7.png",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "653d518ff3dd3db2ff7d582f"
+    },
+    "sponsor": "NATURAL Product",
+    "logo": "client5.png",
+    "__v": 0
+  }
+]

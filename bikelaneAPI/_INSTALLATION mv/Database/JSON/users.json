@@ -1,0 +1,22 @@
+[
+  {
+    "_id": {
+      "$oid": "653e18c45a25a40b83326018"
+    },
+    "email": "admin@bikelane.dk",
+    "password": "$2b$05$NVNG730LzZmp0aHjAe6FUulsLv4k5qG8kMKOf2lTnx/WC6k7aRITq",
+    "name": "Karl Henriksen",
+    "admin": true,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "653e18ea5a25a40b8332601b"
+    },
+    "email": "ve@bikelane.dk",
+    "password": "$2b$05$Lb3GYyUI2QExuX479OZ/Fu4fK2Y71VgE6BuFc2Tr7bMko2uqIiqp.",
+    "name": "Vera Eriksen",
+    "admin": false,
+    "__v": 0
+  }
+]

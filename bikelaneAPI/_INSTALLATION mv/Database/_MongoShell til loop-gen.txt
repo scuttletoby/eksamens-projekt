@@ -1,0 +1,43 @@
+1. Åbn MongoDB Compass
+2. Åbn mongosh (i bunden - shell)
+3. skriv `use bikelane` (forudsætter at API'et er startet og har lavet databasen)
+4. Kopier, indsæt scriptet herunder
+    - husk at rette "Mappen hvor du har lagt JSON-filerne" til så det passer med den mappe, hvor JSON-filerne er placeret
+5. Tryk Enter
+
+
+const fs = require("fs");
+		
+        // Mappen hvor du har lagt JSON-filerne:
+		const mappeSti = "C:/mongodb/bikelane/";
+		
+		function removeIdField(data) {
+		    return data.map(item => {
+		        delete item._id;
+		        return item;
+		    });
+		}
+		
+		const filnavne = fs.readdirSync(mappeSti);
+		for (let i = 0; i < filnavne.length; i++) {
+		    const filnavn = filnavne[i];
+		    if (filnavn.endsWith(".json")) {
+		        const collectionNavn = filnavn.replace(/\.json$/, ""); // Fjern ".json" fra filnavnet
+		
+		        const jsonFil = fs.readFileSync(mappeSti + filnavn, "utf8");
+		
+		        try {
+		            const jsonData = JSON.parse(jsonFil);
+		
+		            const dataWithoutId = removeIdField(jsonData);
+		
+		            if (Array.isArray(dataWithoutId) && dataWithoutId.length > 0) {
+		                db[collectionNavn].insertMany(dataWithoutId);
+		            } else {
+		                print(`JSON-filen '${filnavn}' indeholder ingen dokumenter.`);
+		            }
+		        } catch (fejl) {
+		            print(`Fejl ved behandling af JSON-fil '${filnavn}':`, fejl);
+		        }
+		    }
+		}

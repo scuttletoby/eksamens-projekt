@@ -1,0 +1,41 @@
+[
+  {
+    "_id": {
+      "$oid": "653d4e2bc3d9675ab1cee74b"
+    },
+    "suptitle": "Dine interesser i centrum",
+    "title": "Klubben har plads til alle typer af interesser for cykling",
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sed voluptas exercitationem, facilis maxime ea voluptatum ipsum mollitia itaque praesentium unde cum reiciendis placeat, excepturi voluptatem beatae? Odio, quidem distinctio?",
+    "keypoints": [
+      {
+        "keypoint": "Planlægning",
+        "description": "Hvis du vil være med til at planlægge turene.",
+        "icon": "ph-projector-screen-chart-thin",
+        "_id": "653d4ef22fa4a9c124da42df"
+      },
+      {
+        "keypoint": "Oplevelser",
+        "description": "Hvis du cykler for at opleve nye steder og mennesker.",
+        "icon": "ph-wall-thin",
+        "_id": "653d4f182fa4a9c124da42e3"
+      },
+      {
+        "keypoint": "Naturen",
+        "description": "Hvis du bare elsker at være i naturen.",
+        "icon": "ph-wind-thin",
+        "_id": "653d4f342fa4a9c124da42e8"
+      },
+      {
+        "keypoint": "Vedligeholdelse",
+        "description": "Hvis du trives med at vedligeholde og reparere",
+        "icon": "ph-gear-six-thin",
+        "_id": "653d4f4e2fa4a9c124da42ee"
+      }
+    ],
+    "__v": 4,
+    "image1": "box5.jpg",
+    "image2": "box7.jpg",
+    "image3": "box6.jpg",
+    "image4": "box8.jpg"
+  }
+]

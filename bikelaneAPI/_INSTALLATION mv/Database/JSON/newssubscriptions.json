@@ -1,0 +1,26 @@
+[
+  {
+    "_id": {
+      "$oid": "653e17b5e99c9da689a5f6a5"
+    },
+    "email": "test@test1.dk",
+    "received": "2023-10-29T08:28:37.159Z",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "653e17bce99c9da689a5f6a7"
+    },
+    "email": "test@test2.dk",
+    "received": "2023-10-29T08:28:44.393Z",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "653e17c9e99c9da689a5f6ab"
+    },
+    "email": "test@test3.dk",
+    "received": "2023-10-29T08:28:57.827Z",
+    "__v": 0
+  }
+]

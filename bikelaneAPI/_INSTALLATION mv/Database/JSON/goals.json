@@ -1,0 +1,42 @@
+[
+  {
+    "_id": {
+      "$oid": "653d3accbc22f460abdf4841"
+    },
+    "goal": "Konkurrencer",
+    "goalcount": 2324,
+    "icon": "fas fa-crown",
+    "order": 2,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "653d3b25bc22f460abdf4843"
+    },
+    "goal": "Events",
+    "goalcount": 2470,
+    "icon": "fas fa-biking",
+    "order": 8,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "653d3b46bc22f460abdf4845"
+    },
+    "goal": "Ruter",
+    "goalcount": 1380,
+    "icon": "far fa-map",
+    "order": 6,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "653d3b65bc22f460abdf4847"
+    },
+    "goal": "Medlemmer",
+    "goalcount": 1420,
+    "icon": "far fa-handshake",
+    "order": 1,
+    "__v": 0
+  }
+]

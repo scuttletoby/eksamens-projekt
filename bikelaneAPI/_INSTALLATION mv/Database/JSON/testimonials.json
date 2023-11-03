@@ -1,0 +1,72 @@
+[
+  {
+    "_id": {
+      "$oid": "653d548e06e5cfb392a3f7bb"
+    },
+    "name": "Peter Berg",
+    "experience": "Har cyklet i 20 år",
+    "motivation": "Det må gerne være vildt - og helst i naturen",
+    "image": "team1.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "653d54ad06e5cfb392a3f7bd"
+    },
+    "name": "Børge Olsen",
+    "experience": "Helt klart motionist",
+    "motivation": "Vil gerne møde nye mennesker med cykel",
+    "image": "team4.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "653d54cd06e5cfb392a3f7bf"
+    },
+    "name": "Henrik Frømand",
+    "experience": "Er lige startet",
+    "motivation": "Elsker at cykle i naturen - og gerne med andre",
+    "image": "team3.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "653d54f106e5cfb392a3f7c1"
+    },
+    "name": "Paul Jensen",
+    "experience": "Har cyklet siden 2009",
+    "motivation": "Jager min bedste tid - altid og hele tiden",
+    "image": "team2.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "653d576806e5cfb392a3f7cc"
+    },
+    "name": "Signe Jensen",
+    "experience": "Startede foråret 2021",
+    "motivation": "Jeg cykler dagligt til gym - og i min fritid",
+    "image": "team6.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "653d57bb06e5cfb392a3f7ce"
+    },
+    "name": "Lea Sivert",
+    "experience": "Har cyklet i over 20 år",
+    "motivation": "Jeg cykler både motion og konkurrence",
+    "image": "team7.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "653d57fe06e5cfb392a3f7d1"
+    },
+    "name": "Anton Sejer",
+    "experience": "Har cyklet i et års tid",
+    "motivation": "Jeg er mest til konkurrence og motion",
+    "image": "team5.jpg",
+    "__v": 0
+  }
+]

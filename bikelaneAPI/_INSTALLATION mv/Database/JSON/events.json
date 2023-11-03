@@ -1,0 +1,182 @@
+[
+  {
+    "_id": {
+      "$oid": "653ccae5623d0ded81a53b89"
+    },
+    "title": "Naturtur - i Nordskoven",
+    "content": "<p>En fantastisk tur for hele familien. <strong>Tag alle med - det bliver sjovt!</strong></p>Sed ac tristique elit. Donec gravida quam quis lectus dignissim laoreet a eget felis. Nulla eleifend enim nibh, feugiat tincidunt elit rhoncus ac. Nulla id urna est. Nulla a massa purus. Pellentesque lacinia arcu erat, ac fermentum nunc blandit commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo ligula non mauris iaculis fermentum. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p><ol><li>Proin interdum velit nunc.</li><li>Curabitur nulla diam, tincidunt at nisl in, volutpat aliquam turpis. Suspendisse aliquam eget neque facilisis gravida. Sed semper ac tellus vel varius.</li></ol><p>Nullam porttitor est et mauris pretium, eu tristique tortor rhoncus. Quisque dapibus dui nisl, non tempor diam euismod quis. Maecenas dignissim orci id risus sagittis, vel pharetra dolor congue. Proin vel quam luctus sem posuere iaculis et id ex. Nunc porta diam condimentum porttitor iaculis. Sed et lacus mi. Etiam congue, eros vel porttitor varius, nibh quam pretium risus, ac dictum justo velit vel mauris. Nam at nibh consequat, vestibulum augue id, lobortis neque. Vestibulum sodales augue erat, vitae eleifend mauris blandit id. Mauris finibus lectus sit amet ipsum maximus eleifend. Proin rhoncus sapien at enim eleifend fringilla. Curabitur euismod metus nec leo dapibus fringilla.</p><p>Ut ut blandit enim. Integer efficitur pellentesque sapien, maximus mattis elit sagittis a. In quis augue rutrum, molestie neque eget, egestas velit. Curabitur erat dolor, fringilla quis libero ut, posuere dapibus quam. In non eros ac nulla gravida pulvinar. Integer porta ligula nisl, et volutpat risus vulputate vel. Vestibulum eu viverra erat, a congue ex. Aliquam rutrum nulla non sapien convallis maximus. </p>",
+    "category": "653cc6b1623d0ded81a53b80",
+    "eventdate": "2024-04-01T00:00:00.000Z",
+    "destination": "Nordskoven",
+    "coordinates": "56.16019402099713, 9.598000435245645",
+    "distance": 50,
+    "image": "event1.jpg",
+    "__v": 0,
+    "difficulty": 4
+  },
+  {
+    "_id": {
+      "$oid": "653ccc48623d0ded81a53b8b"
+    },
+    "title": "Værksted og vedligeholdelse i klubhuset",
+    "content": "<p>Super aften med mulighed for at få sat biken i stand. Lær samtidig hvordan du gør det - gearskift, rensning og smøring af kæde osv. Der serveres kaffe og kage imens, og der er også et par børnecykler som de mindre kan skrue på.</p><p>Mød og og vær med - og tag gerne et par cykler og en værktøjskasse med. Ut ut blandit enim. Integer efficitur pellentesque sapien, maximus mattis elit sagittis a. In quis augue rutrum, molestie neque eget, egestas velit. Curabitur erat dolor, fringilla quis libero ut, posuere dapibus quam. In non eros ac nulla gravida pulvinar. Integer porta ligula nisl, et volutpat risus vulputate vel. Vestibulum eu viverra erat, a congue ex. Aliquam rutrum nulla non sapien convallis maximus. </p>",
+    "category": "653cc6b1623d0ded81a53b80",
+    "eventdate": "2023-12-01T00:00:00.000Z",
+    "destination": "Klubhuset",
+    "coordinates": "56.4046138159881, 10.887380353341387",
+    "distance": 0,
+    "image": "event2.jpg",
+    "__v": 0,
+    "difficulty": 1
+  },
+  {
+    "_id": {
+      "$oid": "653ccdb6623d0ded81a53b8d"
+    },
+    "title": "Opvisningsshow - med tricks og stunts",
+    "content": "<p><strong>Så'r det tid til blær!</strong> Kom og vis dine sejeste stunts og tricks - eller vær med til at hylde de andre, der bare er super seje. Måske kan du blive inspireret?</p><ol><li>Hop og spring i luften</li><li>Spis pandekager mens du springer ud fra 3 km højde</li><li>Cykel under vandet i 1 time uden ilt</li><li>Bliv ramt af en lastbil i fuld fart</li></ol><p>Mød og og vær med - tag familien med. Det bliver herresjovt. Proin vel quam luctus sem posuere iaculis et id ex. Nunc porta diam condimentum porttitor iaculis. Sed et lacus mi. Etiam congue, eros vel porttitor varius, nibh quam pretium risus, ac dictum justo velit vel mauris. Nam at nibh consequat, vestibulum augue id, lobortis neque. Vestibulum sodales augue erat, vitae eleifend mauris blandit id. Mauris finibus lectus sit amet ipsum maximus eleifend. Proin rhoncus sapien at enim eleifend fringilla. Curabitur euismod metus nec leo dapibus fringilla.</p><p>Husk også førstehjælpskassen. Ut ut blandit enim. Integer efficitur pellentesque sapien, maximus mattis elit sagittis a. In quis augue rutrum, molestie neque eget, egestas velit. Curabitur erat dolor, fringilla quis libero ut, posuere dapibus quam. In non eros ac nulla gravida pulvinar. Integer porta ligula nisl, et volutpat risus vulputate vel. Vestibulum eu viverra erat, a congue ex. Aliquam rutrum nulla non sapien convallis maximus. </p>",
+    "category": "653cc6a6623d0ded81a53b7e",
+    "eventdate": "2023-12-10T00:00:00.000Z",
+    "destination": "Grenå Mtb Singletrack",
+    "coordinates": "56.406733297455915, 10.890246504944512",
+    "distance": 30,
+    "image": "event3.jpg",
+    "__v": 0,
+    "difficulty": 10
+  },
+  {
+    "_id": {
+      "$oid": "653ce2e1623d0ded81a53b97"
+    },
+    "title": "Årets juletur",
+    "content": "<p><b>Årets skønneste (h)juletur med hele familien!</b> Tag med i skoven, hvor vi cykler rundt og leder efter (h)julemanden.</p><p></p><ul> <li>Først: Lorem ipsum dolor sit amet consectetuer.</li> <li>Derefter: Aenean commodo ligula eget dolor.</li> <li>Og til sidst: Aenean massa cum sociis natoque penatibus.</li> </ul> <p>Husk madpakker og varme handsker. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>",
+    "category": "653cc6b1623d0ded81a53b80",
+    "eventdate": "2023-12-16T00:00:00.000Z",
+    "destination": "Skovsøen i Grenå",
+    "coordinates": "56.39669837235085, 10.890742174756573",
+    "distance": 25,
+    "image": "event5.jpg",
+    "__v": 0,
+    "difficulty": 2
+  },
+  {
+    "_id": {
+      "$oid": "653ce41b623d0ded81a53b99"
+    },
+    "title": "Nytårsløbet i Dyreparken",
+    "content": "<p><strong>Nyt år - nye tur</strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p><table> <tr> <th>Første start</th> <th>Anden start</th> <th>Tredje start</th> <th>Fjerde start</th> </tr> <tr> <td>Grenå</td> <td>Entry First Line 2</td> <td>Entry First Line 3</td> <td>Entry First Line 4</td> </tr> <tr> <td>Rønde</td> <td>Entry Line 2</td> <td>Entry Line 3</td> <td>Entry Line 4</td> </tr> <tr> <td>Ebeltoft</td> <td>Entry Last Line 2</td> <td>Entry Last Line 3</td> <td>Entry Last Line 4</td> </tr></table><p>Afslutningsvis mødes vi og evaluerer løbet i klubhuset. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>",
+    "category": "653cc691623d0ded81a53b7a",
+    "eventdate": "2024-01-15T00:00:00.000Z",
+    "destination": "Skandinavisk Dyrepark",
+    "coordinates": "56.34252298295027, 10.654985503142731",
+    "distance": 95,
+    "image": "event4.jpg",
+    "__v": 0,
+    "difficulty": 3
+  },
+  {
+    "_id": {
+      "$oid": "653ce5a1623d0ded81a53b9b"
+    },
+    "title": "Mosesporet i Store Vildmose",
+    "content": "<p>Kør i mosen! Mudder og sump kendetegner denne tur, hvor det bliver muligt at få en krammer af Mosekonen (hvis hun da ikke brygger!). Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p><ul> <li>Sump og siv: Lorem ipsum dolor sit amet consectetuer.</li> <li>Vådt tøj og kolde rumper: Aenean commodo ligula eget dolor.</li></ul>¨<p>Lorem ipsum dolor sit amet. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p><p>Husk <b>at det er vigtigt</b> at alle kommer med hjem og ikke er gået i stykker eller glemt i mosen i løbet af turen. Pas på jer derude - og hold sammen. Vi afholder en optælling i klubhuset efter hjemkomst for at afklare, hvem der evt. mangler. Vi plejer at få alle med, men man kan aldrig vide. God tur.</p>",
+    "category": "653cc684623d0ded81a53b78",
+    "eventdate": "2023-11-19T00:00:00.000Z",
+    "destination": "Skandinavisk Dyrepark",
+    "coordinates": "56.34252298295027, 10.654985503142731",
+    "distance": 95,
+    "image": "event6.jpg",
+    "__v": 0,
+    "difficulty": 10
+  },
+  {
+    "_id": {
+      "$oid": "653ce70a623d0ded81a53b9d"
+    },
+    "title": "Sommerløbet 2023",
+    "content": "<p>Vær med når åreste hotteste løb bliver afviklet på Helgenæs - sommeren 2023. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p><ul><li>Mon eventen her dukker op?</li><li>Det er jo allerede afviklet!</li></ul><p>Tag bare hele familien med - også kæledyrene. Der er plads til alle. Vi mødes ved klubhuset og kører i samlet flok derud.</p><p>Efter løbet er der vaffelis til alle - og vi har grill med så det er muligt at riste en medbragt pølse eller to, hvor vi står for kartoffelsalaten</p><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>",
+    "category": "653cc69c623d0ded81a53b7c",
+    "eventdate": "2023-07-10T00:00:00.000Z",
+    "destination": "Helgenæs",
+    "coordinates": "56.133837756113365, 10.522109008165828",
+    "distance": 50,
+    "image": "event10.jpg",
+    "__v": 0,
+    "difficulty": 3
+  },
+  {
+    "_id": {
+      "$oid": "653ce830623d0ded81a53b9f"
+    },
+    "title": "Koldeste tur på heden",
+    "content": "<p>Vær med når åreste koldeste løb bliver afviklet på Heden. Vi drøner rundt og høvler heden op, men der bliver selvfølgelig også plads til at tage den med ro.</p><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p><ul><li>Husk madpakke og drikkevarer</li><li>Sørg for lappegrej</li></ul><p>Tag bare hele den pukkelryggede med. Der er plads til alle på denne kolde tur i bakkerne. Vi mødes ved klubhuset og kører i samlet flok derud.</p><p>Efter løbet er der varme pandekager til alle - og vi medbringer selvfølgelig sukker, marmelade og øvrig pandekage-kit.</p><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>",
+    "category": "653cc69c623d0ded81a53b7c",
+    "eventdate": "2024-02-18T00:00:00.000Z",
+    "destination": "Annebjerg Plantage",
+    "coordinates": "56.39620116017051, 10.900240720534102",
+    "distance": 40,
+    "image": "event7.jpg",
+    "__v": 0,
+    "difficulty": 9
+  },
+  {
+    "_id": {
+      "$oid": "653ce98c623d0ded81a53ba1"
+    },
+    "title": "Oplev Mols Bjerge fra sadlen",
+    "content": "<p><strong>Høvl toppen af Mols Bjerge!</strong> Vi cykler rundt i forskellige tempi i området omkring Mols Bjerge og Trehøje. Vi når at opleve:</p><ul> <li>Trehøje</li> <li>Tinghulen</li> <li>Nedre og Øvre Strandkær</li><li>Vilde heste</li></ul><p>Medbring cykel og godt humør. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p><p>Vis hensyn til hinanden, når det ikke kan være anderledes. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>",
+    "category": "653cc6b1623d0ded81a53b80",
+    "eventdate": "2024-05-01T00:00:00.000Z",
+    "destination": "Mols Bjerge",
+    "coordinates": "56.21991062139381, 10.565816390516916",
+    "distance": 140,
+    "image": "event8.jpg",
+    "__v": 0,
+    "difficulty": 4
+  },
+  {
+    "_id": {
+      "$oid": "653ceb05623d0ded81a53ba3"
+    },
+    "title": "Skovtur for juniorer m/familie",
+    "content": "<p>Hestehave-skovtur for hele familien og især de små. Flå familien væk fra iPad'en og kom ud i skoven. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p><h2>Det vigtigste at huske på:</h2><ul> <li>Forplejning: Lorem ipsum dolor sit amet consectetuer.</li> <li>Medbring: Aenean commodo ligula eget dolor.</li> <li>Undgå: Aenean massa cum sociis natoque penatibus.</li></ul><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>",
+    "category": "653cc6a6623d0ded81a53b7e",
+    "eventdate": "2024-06-10T00:00:00.000Z",
+    "destination": "Hestehave Skov",
+    "coordinates": "56.28743419713383, 10.466103106178782",
+    "distance": 12,
+    "image": "event9.jpg",
+    "__v": 0,
+    "difficulty": 1
+  },
+  {
+    "_id": {
+      "$oid": "653ceece623d0ded81a53ba5"
+    },
+    "title": "Tour de Sol, street og Dubai stemning",
+    "content": "<p><strong>Oplev palmer, sol og street og Dubai stemning</strong> i Ree Park, hvor vi giver den gas med sjov og herlige eksperimenter på 2 hjul. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p><h2>Husk at medbringe:</h2><ul> <li>Godt humør: Lorem ipsum dolor sit amet consectetuer.</li> <li>Cykel: Aenean commodo ligula eget dolor.</li> <li>Mad og drikke - og penge til entréen</li></ul><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p><p>Og når dagen går på hæld samles vi og klapper en giraf. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>",
+    "category": "653cc691623d0ded81a53b7a",
+    "eventdate": "2024-06-10T00:00:00.000Z",
+    "destination": "Ree Park Safari",
+    "coordinates": "56.263129113812, 10.737944178457894",
+    "distance": 100,
+    "image": "event11.jpg",
+    "__v": 0,
+    "difficulty": 10
+  },
+  {
+    "_id": {
+      "$oid": "653cefa2623d0ded81a53ba7"
+    },
+    "title": "Pink City Tour",
+    "content": "<p><strong>Vi mødes og cykler langs det pink stakit i byen</strong> hvor vi følges ad de første mange kilometer og herefter ikke følges ad længere. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p><h2>Husk at medbringe:</h2><ul> <li>Dit mest pink outfit</li> <li>City-stemning</li> <li>Mad og drikke - og penge til en is</li></ul><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p><p>Inden vi slutter tagger vi vores klubnavn på stakitet og cykler hurtigt derfra igen. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>",
+    "category": "653cc69c623d0ded81a53b7c",
+    "eventdate": "2024-08-31T00:00:00.000Z",
+    "destination": "Aarhus C",
+    "coordinates": "56.157213648818164, 10.210628520777858",
+    "distance": 20,
+    "image": "event12.jpg",
+    "__v": 0,
+    "difficulty": 3
+  }
+]

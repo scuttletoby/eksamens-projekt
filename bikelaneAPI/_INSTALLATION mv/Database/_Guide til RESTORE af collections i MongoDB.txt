@@ -1,0 +1,36 @@
+
+//// RESTORE data til MongoDB
+
+OBS! Forudsætter at du har installeret MongoDB Tools (se punkt 3 herunder)
+
+1. Opret en mappe med fx navnet "mongodb" på C-drevet (VIGTIGT - det SKAL være på c-drevet) 
+
+2. Kopier stroem-mappen (ligger i mappen her) ind i mappen, du lige har lavet på c-drevet
+    ... så du har "C:\mongodb\stroem" med alle json-filerne til at genskabe databasen
+
+3. Brug "Stifinder" og find bin-mappen i MongoDBs Tools-mappe*  - det ser nok sådan her ud: 
+    
+    C:\Program Files\MongoDB\Tools\100\bin
+    
+    * (gælder for nyere versioner - der er en anden måde i ældre versioner, når der ikke er en Tools-mappe, så sig til, hvis du ikke kan finde en Tools-mappe)
+
+4. I adresselinjen i Stifinder (hvor du kan se, at du står i bin-mappen) skriv "cmd" 
+    ... dvs. du overskriver bin-mappens sti
+
+5. Tryk ENTER, så åbner kommandovinduet og peger på bin-mappen (tjek det - spørg, hvis du er i tvivl)
+
+8. Kopier kommandoen herunder (vær omhyggelig med at få det hele med):
+
+    mongorestore -d stroem C:\mongodb\bikelane
+    
+9. Paste/indsæt kommandoen (du skal stadig være i bin-mappen) og tryk ENTER
+
+10. Nu burde MongoDB restore/genskabe databasen i din mongoDB
+
+11. Åbn MongoDB (localhost)
+
+12. Tryk på refresh og tjek, at den nye database er oprettet, og at der er collections med documents og data import
+
+13. Start din backend (med "npm run start" eller "npm run devStart") og tjek, at server og databaseserver starter op
+
+14. Sørg for at have import'et Postman-json-filen i Postman - åbn nogle af get-metoderne og tjek, at du får data/ingen fejl
