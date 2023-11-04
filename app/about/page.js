@@ -1,16 +1,18 @@
 "use client"
 
 import Image from 'next/image';
+import CountUp from 'react-countup';
 
 import Header from '../components/rework/header';
-import Footer from '../components/footer';
+import Footer from '../components/rework/footer';
 import Community from '../components/rework/community';
 import { getHero, getGoals } from  '../components/data';
+import ScrollToTop from '../components/scrolltotop';
 import "./style.css";
 
 export default function About() {
-    let { data: hero, isLoading: isHeroLoading, isError: isHeroError} = getHero("653f624462bf0da5500f26df");
-    let { data: testimonial, isLoading: isTestimonialLoading, isError: isTestimonialError} = getHero("653f624462bf0da5500f26e1");
+    let { data: hero, isLoading: isHeroLoading, isError: isHeroError} = getHero("6542b939be38a0e5c03e52ec");
+    let { data: testimonial, isLoading: isTestimonialLoading, isError: isTestimonialError} = getHero("6542b939be38a0e5c03e52ee");
     let { data: goals, isLoading: isGoalsLoading, isError: isGoalsError} = getGoals();
 
     if (isHeroError || isTestimonialError || isGoalsError) return <div>Error...</div>
@@ -65,7 +67,7 @@ export default function About() {
             <section className="flex flex-col items-center justify-center h-full gap-16 p-40 lg:flex-row bg-bgColor">
                 {goals.map((goal) => (
                     <div key={goal._id} className="relative flex flex-col items-center w-full gap-2">
-                        <h2 className="text-3xl font-bold font-Lexend">{goal.goalcount}</h2>
+                        <CountUp enableScrollSpy={true} scrollSpyDelay={500} duration={4} className="text-3xl font-bold font-Lexend" end={goal.goalcount} />
                         <sub className="text-xs font-bold text-darkGray font-Archivo">{goal.goal.toUpperCase()}</sub>
                         <div className="absolute flex items-center justify-center w-8 h-8 translate-x-[3.25rem] -translate-y-[1.25rem] border rounded-full border-blush">
                             <i className={`text-blush ${goal.icon}`}></i>
@@ -74,6 +76,7 @@ export default function About() {
                 ))}
             </section>
             <Footer />
+            <ScrollToTop />
         </>
     )
 }

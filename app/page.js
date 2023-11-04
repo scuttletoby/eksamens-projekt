@@ -1,26 +1,28 @@
 "use client"
 
-import Header from './components/header';
-import Hero from './components/hero';
-import Faellesskab from './components/faellesskab';
-import VoresMael from './components/voresmael';
+import Header from './components/rework/header';
+import FrontHeroHero from './components/rework/fronthero';
+import Community from './components/rework/community';
+import Goals from './components/rework/goals';
 import Centrum from './components/centrum';
 import HvemErVi from './components/hvemervi';
-import Footer from './components/footer';
+import Footer from './components/rework/footer';
 import PanoramaSwiper from './components/panoramaswiper';
+import ScrollToTop from './components/scrolltotop';
 
 export default function Home() {
   return (
     <>
       <Header />
-      <Hero />
-      <Faellesskab />
-      <VoresMael />
+      <FrontHeroHero />
+      <Community />
+      <Goals />
       <Centrum />
       <HvemErVi />
       <PanoramaSwiper />
       <div className="h-60"></div>
       <Footer />
+      <ScrollToTop />
     </>
   )
 }

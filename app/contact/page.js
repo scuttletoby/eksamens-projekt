@@ -5,21 +5,38 @@ import Image from 'next/image';
 
 import Header from '../components/rework/header';
 import Footer from '../components/footer';
-import { getHero, getContactInfo } from  '../components/data';
+import { getHero, getContactInfo, createInquery } from  '../components/data';
 import "./style.css";
+import ScrollToTop from '../components/scrolltotop';
 
 
 export default function Contact() {
-    let { data: hero, isLoading: isHeroLoading, isError: isHeroError} = getHero("653f624462bf0da5500f26e2");
+    let { data: hero, isLoading: isHeroLoading, isError: isHeroError} = getHero("6542b939be38a0e5c03e52ef");
     let { data: contact, isLoading: isContactLoading, isError: isContactError} = getContactInfo();
 
     if (isHeroError || isContactError) return <div>Error...</div>
     if (isHeroLoading || isContactLoading) return <div>Loading...</div>
 
-    window.addEventListener("submit", (event) => {
+    let formData = {
+        "name": "",
+        "email": "",
+        "phone": "",
+        "message": ""
+    };
+
+    function HandleSubmit(event) {
         event.preventDefault();
-        console.log(event.target[0].value);
-    })
+        formData.name = event.target[0].value;
+        formData.email = event.target[1].value;
+        formData.phone = event.target[2].value;
+        formData.message = event.target[3].value;
+
+        console.log(json);
+
+        createInquery(formData);
+        window.alert("Din besked er blevet sendt!");
+        return false;
+    }
     
 
     const Map = dynamic(
@@ -70,20 +87,20 @@ export default function Contact() {
                             <p className="text-sm font-bold text-darkGray font-Archivo">{contact.email}</p>
                         </div>
                     </div>
-                    <form className="flex flex-col gap-4 lg:w-full" id="contactForm">
+                    <form className="flex flex-col gap-4 lg:w-full" id="contactForm" onSubmit={HandleSubmit}>
                         <div className="flex flex-col">
                             <label className="text-sm font-Archivo" htmlFor="form-name">Navn</label>
-                            <input required className="p-4 text-sm border rounded-md text-darkGray font-Archivo" name="form-name" id="form-name" type="text" placeholder="Dit navn..."></input>
+                            <input required pattern="([a-z A-Z]+)*" className="p-4 text-sm border rounded-md text-darkGray font-Archivo" name="form-name" id="form-name" type="text" placeholder="John Johnson"></input>
                         </div>
                         
                         <div className="flex flex-col">
                             <label className="text-sm font-Archivo" htmlFor="form-email">Email</label>
-                            <input required className="p-4 text-sm border rounded-md text-darkGray font-Archivo" name="form-email" id="form-email" type="email" placeholder="Din email..."></input>
+                            <input required className="p-4 text-sm border rounded-md text-darkGray font-Archivo" name="form-email" id="form-email" type="email" placeholder="eksempel@test.dk"></input>
                         </div>
 
                         <div className="flex flex-col">
                             <label className="text-sm font-Archivo" htmlFor="form-phonenumber">Telefon</label>
-                            <input required className="p-4 text-sm border rounded-md text-darkGray font-Archivo" name="form-phonenumber" id="form-phonenumber" type="tel" placeholder="Dit telefonnummer..."></input>
+                            <input required pattern="([0-9]{2} ){3}[0-9]{2}" className="p-4 text-sm border rounded-md text-darkGray font-Archivo" name="form-phonenumber" id="form-phonenumber" type="tel" placeholder="12 42 12 75"></input>
                         </div>
 
                         <div className="flex flex-col">
@@ -96,6 +113,7 @@ export default function Contact() {
                 </section>
                 <Map />
             <Footer />
+            <ScrollToTop />
         </>
     )
 }

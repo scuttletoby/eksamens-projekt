@@ -3,10 +3,11 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-import Header from '../components/header';
-import Footer from '../components/footer';
+import Header from '../components/rework/header';
+import Footer from '../components/rework/footer';
 import Event from '../components/event';
-import sortEvents from '../components/sortEvents';
+import sortEvents from '../components/sortevents';
+import ScrollToTop from '../components/scrolltotop';
 
 export default function EventsPage() {
     const [heroData, setHeroData] = useState(null);
@@ -125,7 +126,7 @@ export default function EventsPage() {
                     <li key={category + "-" + index} ><a onClick={()=>{switchCategory(category)}}>{category}</a></li>
                 ))}
             </ul>
-            <div className="grid w-full grid-cols-3 grid-rows-3 gap-4">
+            <div className="grid w-full grid-cols-3 grid-rows-3 gap-4 max-lg:grid-cols-1 max-lg:grid-rows-9">
                 {newEventData.map((event, index) => (
                     <Event event={event} key={event._id} />
                 ))}
@@ -147,12 +148,12 @@ export default function EventsPage() {
             </div>
         </main>
         <hr className="mx-20 mt-20" />
-        <section className="flex items-center px-20 mt-20">
+        <section className="flex items-center px-20 mt-20 max-lg:flex-col">
             <div className="max-w-[18rem]">
                 <sub className="font-Lexend text-blush">Sponser</sub>
                 <h2 className="text-2xl font-bold font-Lexend">Støt vores sponsorer - de støtter os</h2>
             </div>
-            <div className="flex gap-12">
+            <div className="flex gap-12 max-lg:flex-col">
                 {sponserData.map((sponser) =>(
                     <Image
                     key={sponser._id}
@@ -165,7 +166,7 @@ export default function EventsPage() {
                 ))}
             </div>
         </section>
-        <section className="flex items-center justify-center p-20 mt-20 bg-contactColor">
+        <section className="flex items-center justify-center p-20 mt-20 bg-contactColor max-lg:flex-col">
             <div className="max-w-[25rem]">
                 <sub className="text-blush font-Lexend">Bliv en af os</sub>
                 <h2 className="text-3xl font-bold text-white font-Lexend">{contactHeroData.suptitle}</h2>
@@ -173,6 +174,7 @@ export default function EventsPage() {
             <button className="w-32 h-12 ml-auto text-xs text-white rounded-md bg-blush">Kontakt os nu</button>
         </section>
         <Footer />
+        <ScrollToTop />
     </>
     )
 }

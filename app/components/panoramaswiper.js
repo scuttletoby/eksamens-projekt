@@ -5,7 +5,7 @@ import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
-import sortEvents from './sortEvents';
+import sortEvents from './sortevents';
 
 export default function PanoramaSwiper() {
     const [data, setData] = useState(null);

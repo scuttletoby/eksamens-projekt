@@ -3,8 +3,9 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-import Header from '../../components/header';
-import Footer from '../../components/footer';
+import Header from '../../components/rework/header';
+import Footer from '../../components/rework/footer';
+import ScrollToTop from '../../components/scrolltotop';
 
 export default function Page({ params }) {
     const [data, setData] = useState(null);
@@ -36,7 +37,7 @@ export default function Page({ params }) {
     return (
         <>
             <Header />
-            <section className="p-20">
+            <section className="p-20 max-lg:p-8">
                 <Image
                 src={"http://localhost:5888/images/event/" + event[0].image}
                 width="1000"
@@ -44,15 +45,15 @@ export default function Page({ params }) {
                 alt={event[0].title}
                 className="w-full rounded-md h-80"
                 />
-                <div className="flex gap-8">
-                    <div className="flex flex-col justify-center h-40 w-[60rem] gap-2 p-8 mt-10 rounded-lg shadow-2xl bg-bgColor">
+                <div className="flex gap-8 max-lg:flex-col">
+                    <div className="flex flex-col justify-center h-40 w-full lg:w-[60rem] gap-2 p-8 mt-10 rounded-lg shadow-2xl bg-bgColor">
                         <div className="flex items-center gap-2">
-                            <div className="flex items-center justify-center w-8 h-8 rounded-full bg-blush">
+                            <div className="flex items-center justify-center p-2 rounded-full w-fit bg-blush">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                                 </svg>
                             </div>
-                            <p>{event[0].category.category}</p>
+                            <p>Kategori</p>
                         </div>
                         <div className="flex items-center gap-2">
                             <div className="flex items-center justify-center w-8 h-8 rounded-full bg-blush">
@@ -79,6 +80,7 @@ export default function Page({ params }) {
                 </div>
             </section>
             <Footer />
+            <ScrollToTop />
         </>
     )
 } 

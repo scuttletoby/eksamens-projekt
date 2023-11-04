@@ -3,8 +3,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { getContactInfo, getEvents } from  '../../components/data';
-import SortEvents from '../../components/sortevents';
+import { getContactInfo, getEvents } from  '../data';
+import SortEvents from '../sortevents';
 
 
 function getRandomImages(data, amount) {
@@ -31,9 +31,9 @@ export default function Footer() {
 
 
     return (
-        <footer className="px-8 pt-20 pb-10 bg-background2 bg-footer">
-            <div className="flex flex-col gap-10">
-                <div className="flex flex-col gap-10">
+        <footer className="flex flex-col gap-10 px-8 pt-20 pb-10 bg-background2 bg-footer">
+            <div className="flex flex-col gap-10 lg:flex-row">
+                <div className="flex flex-col gap-10 lg:w-1/4">
                     <Image
                         src={"/images/logoFooter.png"}
                         width={0}
@@ -59,7 +59,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="flex flex-col gap-8">
+                <div className="flex flex-col gap-8 lg:w-1/4">
                     <h2 className="font-bold text-white text-1xl font-Lexend">Kommende events</h2>
                     <hr className="border border-gray-800" />
                     <div className="flex flex-col gap-6">
@@ -72,7 +72,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="flex flex-col gap-8">
+                <div className="flex flex-col gap-8 lg:w-1/4">
                     <h2 className="font-bold text-white text-1xl font-Lexend">Indhold</h2>
                     <hr className="border border-gray-800" />
                     <div className="flex flex-col gap-6">
@@ -97,26 +97,26 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col gap-8">
+                <div className="flex flex-col gap-8 lg:w-1/4">
                     <h2 className="font-bold text-white text-1xl font-Lexend">Galleri</h2>
                     <hr className="border border-gray-800" />
                     <div className="grid grid-cols-3 grid-rows-2 gap-2">
                     {randomImages.map((image, index) => (
                         <Image
                         key={"image-" + index}
-                        className="rounded-md"
+                        className="w-full h-full rounded-md"
                         src={image}
                         alt={"Image in the gallery"}
-                        width={200}
-                        height={200}
+                        width={250}
+                        height={180}
                         />
                     ))}
                     </div>
                 </div>
-                <div className="flex flex-col gap-8">
-                    <hr className="border border-gray-800" />
-                    <p className="text-xs text-footerText font-Lexend">© Copyright 2012 Bikelane.</p>
-                </div>
+            </div>
+            <div className="flex flex-col gap-10">
+                <hr className="border border-gray-800" />
+                <p className="text-xs text-footerText font-Lexend">© Copyright 2012 Bikelane.</p>
             </div>
         </footer>
     )

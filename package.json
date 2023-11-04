@@ -16,11 +16,11 @@
     "leaflet": "^1.9.4",
     "next": "14.0.0",
     "react": "^18",
+    "react-countup": "^6.5.0",
     "react-dom": "^18",
     "react-leaflet": "^4.2.1",
     "swiper": "^11.0.3",
-    "swr": "^2.2.4",
-    "use-count-up": "^3.0.1"
+    "swr": "^2.2.4"
   },
   "devDependencies": {
     "autoprefixer": "^10",
