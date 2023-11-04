@@ -11,7 +11,7 @@ import ScrollToTop from '../components/scrolltotop';
 
 
 export default function Contact() {
-    let { data: hero, isLoading: isHeroLoading, isError: isHeroError} = getHero("6542b939be38a0e5c03e52ef");
+    let { data: hero, isLoading: isHeroLoading, isError: isHeroError} = getHero("653f624462bf0da5500f26e2");
     let { data: contact, isLoading: isContactLoading, isError: isContactError} = getContactInfo();
 
     if (isHeroError || isContactError) return <div>Error...</div>

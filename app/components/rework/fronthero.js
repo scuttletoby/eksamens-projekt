@@ -1,6 +1,7 @@
 "use client"
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { getHero } from  '../data';
 
@@ -15,6 +16,7 @@ export default function FrontHero() {
     const tempHeroContent = "Ab esse quod repellendus fugit amet eius aspernatur excepturi culpa ipsa voluptatum.";
     const tempHeroBtnText = "Kom og deltag";
     const tempVideolink = "https://www.youtube.com/embed/H55W1NhAbQo?si=IChJTF7-sXzSHZ16";
+    const tempBtnlink = "contact"
 
     let heroTitle = tempHeroTitle.slice(0, 30);
     let keywords = tempHeroTitle.slice(31).split(" ");
@@ -53,7 +55,7 @@ export default function FrontHero() {
                         <h2 className="text-3xl font-bold font-Lexend text-blush">{keyword}</h2>
                     </div>
                     <p className="text-lg text-dimGray font-Archivo">{tempHeroContent}</p>
-                    <button className="px-6 py-4 text-white rounded-md w-fit bg-blush">{tempHeroBtnText}</button>
+                    <Link href={"/" + tempBtnlink} className="px-6 py-4 text-white rounded-md w-fit bg-blush">{tempHeroBtnText}</Link>
                 </div>
 
                 <div className="relative rounded-lg w-80 h-80 lg:w-1/2">

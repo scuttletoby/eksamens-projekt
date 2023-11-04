@@ -22,8 +22,8 @@ export default function Centrum() {
 
 
     return (
-        <section className="flex justify-between px-20 mt-40 bg-white pt-28 max-lg:items-center max-lg:flex-col">
-            <div className="flex flex-col py-5 gap-4 max-w-[50%]">
+        <section className="flex justify-between px-8 bg-white lg:px-20 max-lg:flex-col pt-28 max-lg:items-center">
+            <div className="flex flex-col py-5 gap-4 lg:max-w-[50%]">
                 <sub className="py-5 font-Lexend text-blush">{data.suptitle}</sub>
                 <h2 className="text-2xl font-bold font-Lexend">{data.title}</h2>
                 <p className="py-5 font-Lexend">{data.content}</p>

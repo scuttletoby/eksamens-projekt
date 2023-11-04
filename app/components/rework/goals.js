@@ -8,7 +8,7 @@ import { getGoals, getHero } from  '../../components/data';
 
 export default function Goals() {
     let { data: goals, isLoading: isGoalsLoading, isError: isGoalsError} = getGoals();
-    let { data: hero, isLoading: isHeroLoading, isError: isHeroError} = getHero("6542b939be38a0e5c03e52ed");
+    let { data: hero, isLoading: isHeroLoading, isError: isHeroError} = getHero("653f624462bf0da5500f26e0");
     const [isHidden, setHidden] = useState(true);
 
     if (isGoalsLoading || isGoalsError) return <div>Error...</div>
