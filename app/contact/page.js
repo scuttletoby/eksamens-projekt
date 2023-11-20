@@ -2,15 +2,19 @@
 
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
+import useSWRMutation from 'swr/mutation';
 
 import Header from '../components/rework/header';
 import Footer from '../components/footer';
-import { getHero, getContactInfo, createInquery } from  '../components/data';
+import { getHero, getContactInfo, createInquery, sendRequest } from  '../components/data';
 import "./style.css";
 import ScrollToTop from '../components/scrolltotop';
 
 
 export default function Contact() {
+    const inqueryUrl = 'http://localhost:5888/inqueries';
+
+    const { trigger } = useSWRMutation(inqueryUrl, sendRequest)
     let { data: hero, isLoading: isHeroLoading, isError: isHeroError} = getHero("653f624462bf0da5500f26e2");
     let { data: contact, isLoading: isContactLoading, isError: isContactError} = getContactInfo();
 
@@ -31,7 +35,7 @@ export default function Contact() {
         formData.phone = event.target[2].value;
         formData.message = event.target[3].value;
 
-        createInquery(formData);
+        trigger(formData);
         window.alert("Din besked er blevet sendt!");
         return false;
     }

@@ -2,6 +2,16 @@ import useSWR from 'swr';
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json())
 
+export async function sendRequest(url, { arg }) {
+  return fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(arg)
+  })
+}
+
 export function getEvents() {
   const { data, error, isLoading } = useSWR(`http://localhost:5888/events`, fetcher);
 
@@ -92,67 +102,17 @@ export function getNewsArticle(id) {
   }
 }
 
-// export async function createEvent({ arg }) {
-//   return fetch(`http://localhost:5888/events/admin`, {
-//     method: 'POST',
-//     body: JSON.stringify(arg)
-//   })
-// }
+export function createInquery(arg) {
+  const { data, error, isLoading } = useSWR(`http://localhost:5888/inqueries`, fetcher2(arg));
+
+  return {
+    data,
+    isLoading,
+    isError: error
+  }
+}
 
 /* Temp admin section */
-
-export async function adminCreate(type, arg) {
-  fetch(`http://localhost:5888/${type}/admin`, {
-    method: 'POST',
-    body: JSON.stringify(arg)
-  }).then((response) => {
-    if (!response.ok) {
-      console.log(response);
-      throw new Error(`Noget gik galt, status: ${response.status}`);
-    }
-    console.log("Du oprettede et nyt event!");
-  });
-}
-
-export async function createInquery(arg) {
-  fetch(`http://localhost:5888/inqueries`, {
-    method: 'POST',
-    body: arg
-  }).then((response) => {
-    if (!response.ok) {
-      throw new Error(`Noget gik galt, status: ${response.status}`);
-    }
-    console.log("Du oprettede en ny besked!");
-  });
-}
-
-export async function createEvent(arg) {
-  fetch(`http://localhost:5888/events/admin`, {
-    method: 'POST',
-    body: JSON.stringify(arg)
-  }).then((response) => {
-    if (!response.ok) {
-      throw new Error(`Noget gik galt, status: ${response.status}`);
-    }
-    console.log("Du oprettede en ny besked!");
-  });
-}
-
-export async function createGoal(arg) {
-  fetch(`http://localhost:5888/goals/admin`, {
-    method: 'POST',
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
-    },
-    body: {"goal":"goalnew","goalcount":"5121","icon":"far fa-handshake","order":"1"},
-  }).then((response) => {
-    if (!response.ok) {
-      throw new Error(`Noget gik galt, status: ${response.status}`);
-    }
-    console.log("Du oprettede et nyt goal!");
-  });
-}
 
 export async function deleteGoal(id) {
   fetch(`http://localhost:5888/goals/admin/${id}`, {
