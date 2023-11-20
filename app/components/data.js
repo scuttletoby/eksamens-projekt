@@ -107,6 +107,7 @@ export async function adminCreate(type, arg) {
     body: JSON.stringify(arg)
   }).then((response) => {
     if (!response.ok) {
+      console.log(response);
       throw new Error(`Noget gik galt, status: ${response.status}`);
     }
     console.log("Du oprettede et nyt event!");
@@ -116,7 +117,7 @@ export async function adminCreate(type, arg) {
 export async function createInquery(arg) {
   fetch(`http://localhost:5888/inqueries`, {
     method: 'POST',
-    body: JSON.stringify(arg)
+    body: arg
   }).then((response) => {
     if (!response.ok) {
       throw new Error(`Noget gik galt, status: ${response.status}`);

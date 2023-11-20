@@ -18,10 +18,10 @@ export default function Contact() {
     if (isHeroLoading || isContactLoading) return <div>Loading...</div>
 
     let formData = {
-        "name": "",
-        "email": "",
-        "phone": "",
-        "message": ""
+        "name":"Test",
+        "email":"test@test.dk",
+        "phone":"30644593",
+        "message":"Test Message"
     };
 
     function HandleSubmit(event) {
@@ -30,8 +30,6 @@ export default function Contact() {
         formData.email = event.target[1].value;
         formData.phone = event.target[2].value;
         formData.message = event.target[3].value;
-
-        console.log(json);
 
         createInquery(formData);
         window.alert("Din besked er blevet sendt!");
