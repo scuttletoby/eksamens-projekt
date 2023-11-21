@@ -9,7 +9,10 @@ export async function sendRequest(url, { arg }) {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(arg)
-  })
+  });
+  // .then((response) => {
+  //   console.log(response.status);
+  // });
 }
 
 export function getEvents() {
