@@ -1,5 +1,7 @@
 "use client"
 
+const form = document.querySelector('form');
+
 import useSWRMutation from 'swr/mutation';
 
 import Header from '../../components/rework/header';
@@ -14,34 +16,28 @@ export default function AdminEvents() {
 
     const { trigger } = useSWRMutation(eventsUrl, sendRequest);
 
-    let formData = {
-        "title":"Test",
-        "content":"test@test.dk",
-        "eventdate": new Date(Date.now()),
-        "destination":"Test Message",
-        "coordinates":"Test Message",
-        "distance":0,
-        "difficulty":0,
-        "image":"Test Message"
-    };
-
     function HandleSubmit(event) {
         event.preventDefault();
 
-        let date1 = new Date(event.target[2].value);
-        console.log(date1);
+        console.log(event.target[7].files[0]);
 
-        console.log(formData);
+        const formData = new FormData();
+
+        // Virker fint bortset fra at category er hardcoded atm
+        // og image filen ikke er sent med (udkommenteret i route filen i backend atm)
 
         formData.title = event.target[0].value;
         formData.content = event.target[1].value;
-        formData.eventdate = date1;
+        formData.eventdate = event.target[2].value;
+        formData.category = "653cc69c623d0ded81a53b7c";
         formData.destination = event.target[3].value;
         formData.coordinates = event.target[4].value;
         formData.distance = event.target[5].value;
         formData.difficulty = event.target[6].value;
-        formData.image = event.target[7].value;
-        
+        formData.image = event.target[7].files[0].name;
+        formData.append('image', event.target[7].files[0]);
+
+        console.log(formData);
 
         trigger(formData);
         window.alert("Event blev oprettet!");
@@ -61,7 +57,12 @@ export default function AdminEvents() {
                         <input type="text" className="text-sm border-2 border-black rounded-md" placeholder="Coordinater..." />
                         <input type="text" className="text-sm border-2 border-black rounded-md" placeholder="Distance..." />
                         <input type="text" className="text-sm border-2 border-black rounded-md" placeholder="Sværhedsgrad..." />
-                        <input type="text" className="text-sm border-2 border-black rounded-md" placeholder="Billede..." />
+                        <div className="border-2 border-black rounded-md text-sm">
+                            <label htmlFor="uploadImage">
+                                Upload billede:
+                            <input id="uploadImage" name="uploadImage" type="file" accept="image/png, image/jpeg" />
+                            </label>
+                        </div>
                         <button type="submit" className="p-4 border rounded-md shadow-lg text-lime-500">Create Event</button>
                     </form>
                 </div>

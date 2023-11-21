@@ -11,8 +11,8 @@ export default function Goals() {
     let { data: hero, isLoading: isHeroLoading, isError: isHeroError} = getHero("653f624462bf0da5500f26e0");
     const [isHidden, setHidden] = useState(true);
 
-    if (isGoalsLoading || isGoalsError) return <div>Error...</div>
-    if (isHeroLoading || isHeroError) return <div>Loading...</div>
+    if (isHeroError || isGoalsError) return <div>Error...</div>
+    if (isHeroLoading || isGoalsLoading) return <div>Loading...</div>
 
     if (!window) return <div>Loading...</div>
 

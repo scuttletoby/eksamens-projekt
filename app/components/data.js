@@ -2,17 +2,41 @@ import useSWR from 'swr';
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json())
 
+// export async function sendRequest(url, { arg }) {
+//   return fetch(url, {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/json',
+//     },
+//     body: JSON.stringify(arg)
+//   });
+// }
+
 export async function sendRequest(url, { arg }) {
-  return fetch(url, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(arg)
-  });
-  // .then((response) => {
-  //   console.log(response.status);
-  // });
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(arg)
+    });
+
+    if (!response.ok) {
+      // If the response status is not in the 200-299 range, it indicates an error
+      const errorData = await response.json();
+      console.error('Request failed:', errorData);
+    } else {
+      // Request was successful, you can process the response data here
+      const responseData = await response.json();
+      console.log('Request successful:', responseData);
+    }
+
+    return response;
+  } catch (error) {
+    console.error('An error occurred:', error);
+    throw error;
+  }
 }
 
 export function getEvents() {

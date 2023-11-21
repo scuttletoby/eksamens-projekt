@@ -45,7 +45,7 @@ export default function PanoramaSwiper() {
           breakpoints={{
             1024: {
               slidesPerView: 3
-            }
+          }
           }}
           // onSlideChange={(swiper) => console.log(swiper)}
           className="absolute bottom-28 translate-y-1/2 h-[22rem]"

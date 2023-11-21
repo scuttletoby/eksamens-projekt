@@ -107,7 +107,7 @@ router.post( '/admin', upload.single( "image" ), async ( req, res ) => {
     try {
 
         let event = new Event( req.body );
-        event.image = req.file.filename;
+        //event.image = req.file.filename;
         await event.save();
 
         return res.status( 201 ).json( { message: routeTitle + ": Ny er oprettet", oprettet: event } );
