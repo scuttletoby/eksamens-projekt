@@ -16,10 +16,10 @@ export async function sendRequest(url, { arg }) {
   try {
     const response = await fetch(url, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(arg)
+      // headers: {
+      //   'Content-Type': 'application/json',
+      // },
+      body: arg
     });
 
     if (!response.ok) {

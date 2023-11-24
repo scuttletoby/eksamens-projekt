@@ -21,21 +21,22 @@ export default function Contact() {
     if (isHeroError || isContactError) return <div>Error...</div>
     if (isHeroLoading || isContactLoading) return <div>Loading...</div>
 
-    let formData = {
-        "name":"Test",
-        "email":"test@test.dk",
-        "phone":"30644593",
-        "message":"Test Message"
-    };
+    // let formData = {
+    //     "name":"Test",
+    //     "email":"test@test.dk",
+    //     "phone":"30644593",
+    //     "message":"Test Message"
+    // };
 
     function HandleSubmit(event) {
         event.preventDefault();
-        formData.name = event.target[0].value;
-        formData.email = event.target[1].value;
-        formData.phone = event.target[2].value;
-        formData.message = event.target[3].value;
+        let fd = new FormData(event.target);
+        // formData.name = event.target[0].value;
+        // formData.email = event.target[1].value;
+        // formData.phone = event.target[2].value;
+        // formData.message = event.target[3].value;
 
-        trigger(formData);
+        trigger(fd);
         window.alert("Din besked er blevet sendt!");
         return false;
     }
@@ -92,22 +93,22 @@ export default function Contact() {
                     <form className="flex flex-col gap-4 lg:w-full" id="contactForm" onSubmit={HandleSubmit}>
                         <div className="flex flex-col">
                             <label className="text-sm font-Archivo" htmlFor="form-name">Navn</label>
-                            <input required pattern="([a-z A-Z]+)*" className="p-4 text-sm border rounded-md text-darkGray font-Archivo" name="form-name" id="form-name" type="text" placeholder="John Johnson"></input>
+                            <input required pattern="([a-z A-Z]+)*" className="p-4 text-sm border rounded-md text-darkGray font-Archivo" name="name" id="form-name" type="text" placeholder="John Johnson"></input>
                         </div>
                         
                         <div className="flex flex-col">
                             <label className="text-sm font-Archivo" htmlFor="form-email">Email</label>
-                            <input required className="p-4 text-sm border rounded-md text-darkGray font-Archivo" name="form-email" id="form-email" type="email" placeholder="eksempel@test.dk"></input>
+                            <input required className="p-4 text-sm border rounded-md text-darkGray font-Archivo" name="email" id="form-email" type="email" placeholder="eksempel@test.dk"></input>
                         </div>
 
                         <div className="flex flex-col">
                             <label className="text-sm font-Archivo" htmlFor="form-phonenumber">Telefon</label>
-                            <input required pattern="([0-9]{2} ){3}[0-9]{2}" className="p-4 text-sm border rounded-md text-darkGray font-Archivo" name="form-phonenumber" id="form-phonenumber" type="tel" placeholder="12 42 12 75"></input>
+                            <input required pattern="([0-9]{2} ){3}[0-9]{2}" className="p-4 text-sm border rounded-md text-darkGray font-Archivo" name="phone" id="form-phonenumber" type="tel" placeholder="12 42 12 75"></input>
                         </div>
 
                         <div className="flex flex-col">
                             <label className="text-sm font-Archivo" htmlFor="form-message">Besked</label>
-                            <textarea required className="max-w-full p-4 text-sm border rounded-md resize min-h-[4rem] text-darkGray font-Archivo" name="form-message" form="contactForm" placeholder="Din besked..." />
+                            <textarea required className="max-w-full p-4 text-sm border rounded-md resize min-h-[4rem] text-darkGray font-Archivo" name="message" form="contactForm" placeholder="Din besked..." />
                         </div>
 
                         <input id="form-submit" className="px-6 py-4 text-white bg-black rounded-md w-fit text-md font-Lexend" type="submit" value="Send besked" />

@@ -1,7 +1,5 @@
 "use client"
 
-const form = document.querySelector('form');
-
 import useSWRMutation from 'swr/mutation';
 
 import Header from '../../components/rework/header';
@@ -19,27 +17,27 @@ export default function AdminEvents() {
     function HandleSubmit(event) {
         event.preventDefault();
 
-        console.log(event.target[7].files[0]);
+        // console.log(event.target[7].files[0]);
 
-        const formData = new FormData();
+        const fd = new FormData(event.target);
 
         // Virker fint bortset fra at category er hardcoded atm
         // og image filen ikke er sent med (udkommenteret i route filen i backend atm)
 
-        formData.title = event.target[0].value;
-        formData.content = event.target[1].value;
-        formData.eventdate = event.target[2].value;
-        formData.category = "653cc69c623d0ded81a53b7c";
-        formData.destination = event.target[3].value;
-        formData.coordinates = event.target[4].value;
-        formData.distance = event.target[5].value;
-        formData.difficulty = event.target[6].value;
-        formData.image = event.target[7].files[0].name;
-        formData.append('image', event.target[7].files[0]);
+        // formData.title = event.target[0].value;
+        // formData.content = event.target[1].value;
+        // formData.eventdate = event.target[2].value;
+        // formData.category = "653cc69c623d0ded81a53b7c";
+        // formData.destination = event.target[3].value;
+        // formData.coordinates = event.target[4].value;
+        // formData.distance = event.target[5].value;
+        // formData.difficulty = event.target[6].value;
+        // formData.image = event.target[7].files[0].name;
+        // formData.append('image', event.target[7].files[0]);
 
-        console.log(formData);
+        // console.log(formData);
 
-        trigger(formData);
+        trigger(fd);
         window.alert("Event blev oprettet!");
     }
 
@@ -50,17 +48,18 @@ export default function AdminEvents() {
                 <div className="flex flex-col items-center w-full p-4 font-bold bg-white rounded-lg shadow-lg h-fit font-Lexend">
                     <h2>Opret Event</h2>
                     <form id="createEventForm" className="flex flex-col justify-center gap-4" onSubmit={HandleSubmit}>
-                        <input type="text"id="createTitle" className="text-sm border-2 border-black rounded-md" placeholder="Title..." />
-                        <input type="text" className="text-sm border-2 border-black rounded-md" placeholder="Indhold..." />
-                        <input type="text" className="text-sm border-2 border-black rounded-md" placeholder="Event dato..." />
-                        <input type="text" className="text-sm border-2 border-black rounded-md" placeholder="Destionation..." />
-                        <input type="text" className="text-sm border-2 border-black rounded-md" placeholder="Coordinater..." />
-                        <input type="text" className="text-sm border-2 border-black rounded-md" placeholder="Distance..." />
-                        <input type="text" className="text-sm border-2 border-black rounded-md" placeholder="Sværhedsgrad..." />
+                        <input name="title" type="text"id="createTitle" className="text-sm border-2 border-black rounded-md" placeholder="Title..." />
+                        <input name="content" type="text" className="text-sm border-2 border-black rounded-md" placeholder="Indhold..." />
+                        <input name="category" type="text" className="text-sm border-2 border-black rounded-md" placeholder="Category..." />
+                        <input name="eventdate" type="date" className="text-sm border-2 border-black rounded-md" placeholder="Event dato..." />
+                        <input name="destination" type="text" className="text-sm border-2 border-black rounded-md" placeholder="Destionation..." />
+                        <input name="coordinates" type="text" className="text-sm border-2 border-black rounded-md" placeholder="Coordinater..." />
+                        <input name="distance" type="text" className="text-sm border-2 border-black rounded-md" placeholder="Distance..." />
+                        <input name="difficulty" type="text" className="text-sm border-2 border-black rounded-md" placeholder="Sværhedsgrad..." />
                         <div className="border-2 border-black rounded-md text-sm">
                             <label htmlFor="uploadImage">
                                 Upload billede:
-                            <input id="uploadImage" name="uploadImage" type="file" accept="image/png, image/jpeg" />
+                            <input id="uploadImage" name="image" type="file" accept="image/png, image/jpeg" />
                             </label>
                         </div>
                         <button type="submit" className="p-4 border rounded-md shadow-lg text-lime-500">Create Event</button>

@@ -18,6 +18,8 @@ export default function FrontSwiper() {
     const slideEvents = events.slice(0, 4);
     console.log(slideEvents[0].category.category);
 
+    console.log(slideEvents)
+
     return (
         <section>
             <div className="relative px-8 py-20 pb-40 bg-background3 bg-footer flex flex-col gap-6">
@@ -36,7 +38,7 @@ export default function FrontSwiper() {
                       slidesPerView: 3
                   }
                   }}
-                  className="absolute bottom-0 translate-y-1/2 h-80"
+                  className="absolute bottom-0 translate-y-1/2 h-80 w-80"
                 >
                     {slideEvents.map((event) => {
                         <SwiperSlide>
