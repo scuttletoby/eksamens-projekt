@@ -21,6 +21,7 @@ export default function Home() {
       <Centrum />
       {/* <HvemErVi /> */}
       <FrontSwiper />
+      {/* <PanoramaSwiper /> */}
       <Footer />
       <ScrollToTop />
     </>
